@@ -1,10 +1,10 @@
 from random import sample
 
 roosters = 4  #aantal roosters
-nummers = [] 
-sterren = []
+max_keuzes = 6
+max_getal = 45
+nummers = []
 
 for i in range(1, roosters+1):
-    nummers = sorted(sample(range(1, 51), 6 ))
-    sterren = sorted(sample(range(1, 13), 2))
-    print("forumulier" + str(i) + ": " + str(nummers) + ',' + str(sterren))
+    nummers = sorted(sample(range(1, max_getal + 1), max_keuzes ))
+    print("forumulier" + str(i) + ": " + str(nummers))
